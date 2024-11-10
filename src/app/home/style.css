@@ -1,0 +1,37 @@
+.home-page {
+  @apply bg-white h-screen p-4 pt-28;
+
+  .home-container {
+    @apply flex flex-col items-center justify-center p-4 bg-white rounded-lg;
+    .title {
+      @apply text-ep_black text-3xl font-bold text-center pb-12;
+    }
+    label {
+      @apply text-ep_black text-lg font-bold;
+    }
+    .home-input {
+      @apply w-full h-12  pl-10 mt-4 mb-8 text-ep_black focus:outline-none rounded-full bg-white shadow-lg;
+    }
+
+    .input-with-icon {
+      @apply relative flex items-center;
+    }
+
+    .input-with-icon .home-input {
+      @apply pr-4;
+    }
+
+    .input-with-icon .icon {
+      @apply absolute left-3 bottom-9 pointer-events-none h-10 w-5 text-ep_gray;
+    }
+    .home-login {
+      @apply w-full max-w-56 bg-ep_pink text-xl py-2 rounded-full;
+    }
+    .home-google-login {
+      @apply w-full max-w-56 bg-white text-xl py-2 rounded-full text-ep_black font-semibold border border-ep_black;
+    }
+    .home-bottom-link {
+      @apply text-ep_gray mt-1.5 px-2 text-xs flex justify-between max-w-56 w-full underline;
+    }
+  }
+}

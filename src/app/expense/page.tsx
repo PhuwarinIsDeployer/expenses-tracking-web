@@ -1,9 +1,9 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { collection, addDoc } from 'firebase/firestore'
-import { db } from '@/app/firebaseConfig'
+import { db } from '@/firebaseConfig'
 
-export default function HomePage() {
+export default function Expense() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
